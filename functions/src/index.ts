@@ -29,7 +29,7 @@ export const sendMail = onRequest(async (request, response) => {
   mail
     .setFrom("info@opendata.jp", "管理者")
     .setSubject("お問い合わせありがとうございます")
-    .addCc('atsushi@moongift.co.jp')
+    .addCc("atsushi@moongift.co.jp")
     .addTo(body.email, {
       USERNAME: body.name,
       COMPANY: body.company,
